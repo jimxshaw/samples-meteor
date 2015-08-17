@@ -41,12 +41,7 @@ if (Meteor.isClient) {
 
 if (Meteor.isServer) {
   Meteor.publish('todos', function() {
-    if (!this.userId) {
-      return Todos.find();
-    }
-    else {
-      return Todos.find({userId: this.userId});
-    }
+    return Todos.find({userId: this.userId});
   });
 }
 

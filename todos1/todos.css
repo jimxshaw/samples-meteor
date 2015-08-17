@@ -60,6 +60,11 @@ li.checked .text {
   color: red;
 }
 
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
 /* Customize container */
 @media (min-width: 768px) {
   .container {
