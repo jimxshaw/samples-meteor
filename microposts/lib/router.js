@@ -11,4 +11,7 @@ Router.map(function() {
 
   // About route
   this.route('about');
+
+  // Profile route
+  this.route('profile');
 });
