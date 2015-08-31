@@ -1,5 +1,11 @@
 Template.posts.helpers({
   posts: function() {
-    return Posts.find({}, {sort: {createAt: -1}})
+    return Posts.find({}, {sort: {createdAt: -1}})
+  }
+});
+
+Template.posts.events({
+  "click #submitPost": function(event, template) {
+    $('#postModal').modal('hide');
   }
 });
