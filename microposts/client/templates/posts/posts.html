@@ -27,33 +27,18 @@
 
   <hr>
 
-  <div class="row post">
-    <div class="col-md-1">
-      <img src="img/profile.png">
+  {{#each posts}}
+    <div class="row post">
+      <div class="col-md-1">
+        <img src="{{getProfileImg userId}}">
+      </div>
+      <div class="col-md-11">
+        <small>Posted by {{username}} at {{createdAt}}</small>
+        <p>{{body}}</p>
+      </div>
     </div>
-    <div class="col-md-11">
-      <small>Posted by Jon Snow at 12-31-2015</small>
-      <p>This is the user's post</p>
-    </div>
-  </div>
+  {{else}}
+    <p>No posts</p>
+  {{/each}}
 
-  <div class="row post">
-    <div class="col-md-1">
-      <img src="img/profile.png">
-    </div>
-    <div class="col-md-11">
-      <small>Posted by Cersei Lannister at 11-17-2015</small>
-      <p>This is the user's post</p>
-    </div>
-  </div>
-
-  <div class="row post">
-    <div class="col-md-1">
-      <img src="img/profile.png">
-    </div>
-    <div class="col-md-11">
-      <small>Posted by Roose Bolton at 9-02-2015</small>
-      <p>This is the user's post</p>
-    </div>
-  </div>
 </template>
