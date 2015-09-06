@@ -6,7 +6,6 @@
 
 meteor-platform
 autopublish
-insecure
 iron:router
 twbs:bootstrap
 mrt:flash-messages
@@ -14,3 +13,4 @@ cfs:standard-packages
 cfs:gridfs
 accounts-password
 ian:accounts-ui-bootstrap-3
+momentjs:moment
