@@ -55,4 +55,22 @@ Router.map(function() {
       return templateData;
     }
   });
+
+  // New Review
+  this.route('new_review', {
+    path: '/new-review/:_id',
+    template: 'new_review',
+    data: function() {
+      return Products.findOne(this.params._id);
+    }
+  });
+
+  // Product Page
+  this.route('product', {
+    path: '/products/:_id',
+    template: 'product',
+    data: function() {
+      return Products.findOne(this.params._id);
+    }
+  });
 });
