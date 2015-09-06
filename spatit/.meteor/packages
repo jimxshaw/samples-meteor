@@ -12,5 +12,5 @@ twbs:bootstrap
 mrt:flash-messages
 cfs:standard-packages
 cfs:gridfs
-accounts-ui
 accounts-password
+ian:accounts-ui-bootstrap-3
