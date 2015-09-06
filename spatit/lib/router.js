@@ -41,4 +41,18 @@ Router.map(function() {
       return templateData;
     }
   });
+
+  // Category Products
+  this.route('category_products', {
+    path:'/categories/:slug',
+    template: 'category_products',
+    data: function() {
+      templateData = {
+        category_products: Products.find({
+          category: this.params.slug
+        })
+      };
+      return templateData;
+    }
+  });
 });
