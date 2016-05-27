@@ -1,22 +1,17 @@
-import { Template } from 'meteor/templating';
-import { ReactiveVar } from 'meteor/reactive-var';
+// Any JS here is automatically run for us. 
 
-import './main.html';
+// Import the React library.
+import React from 'react';
 
-Template.hello.onCreated(function helloOnCreated() {
-  // counter starts at 0
-  this.counter = new ReactiveVar(0);
-});
+// Create a component. A component's job is to render HTML to the screen.
+const App = () => {
+	return (
+		<div>
+			React App #2
+		</div>
+	);
+};
 
-Template.hello.helpers({
-  counter() {
-    return Template.instance().counter.get();
-  },
-});
 
-Template.hello.events({
-  'click button'(event, instance) {
-    // increment the counter when button is clicked
-    instance.counter.set(instance.counter.get() + 1);
-  },
-});
+// Render the component to the screen.
+
